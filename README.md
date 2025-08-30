@@ -81,6 +81,15 @@ See the `/output` directory for example annotated images and JSON files from you
 - Built for technical assessment. Inspired by the open-source community.
 
 ---
+project-root/
+├── object_detection_service.py # AI backend (detection logic)
+├── ui_service.py # UI backend (upload handler)
+├── requirements.txt
+├── Dockerfile.ai
+├── Dockerfile.ui
+├── docker-compose.yml
+├── output/ # Saved results (images, JSON)
+└── README.md # (this file)
 
 **For any questions or replication issues, please refer to the step-by-step instructions above or raise an issue in this repository.**
 
