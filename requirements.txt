@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+httpx
+python-multipart
+torch
+opencv-python-headless
+pillow
+ultralytics
+pandas
+tqdm
+seaborn

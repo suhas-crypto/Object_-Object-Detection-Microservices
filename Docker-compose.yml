@@ -1,0 +1,20 @@
+services:
+  ai-backend:
+    build:
+      context: .
+      dockerfile: DockerFile.ai
+    container_name: ai-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output       # Maps local ./output to container /app/output
+
+  ui-backend:
+    build:
+      context: .
+      dockerfile: DockerFile.ui
+    container_name: ui-backend
+    ports:
+      - "8001:8001"
+    depends_on:
+      - ai-backend
