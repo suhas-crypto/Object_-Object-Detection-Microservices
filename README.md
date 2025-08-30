@@ -51,5 +51,38 @@ The solution is designed for full portability and ease of deployment using Docke
     - Check `output/output_<filename>.jpg` and `output/output_<filename>.jpg.json`.
 
 ---
+---
+
+## How it Works
+
+- The **UI backend** receives the image and sends it to the AI backend.
+- The **AI backend** predicts object locations/labels, draws bounding boxes, and saves results.
+- Response is sent back to the UI/backend and user, with image and JSON persisted to disk.
+
+---
+
+## References
+
+- [YOLOv5 Ultralytics](https://github.com/ultralytics/yolov5)
+- [YOLOv3 (assessment reference)](https://github.com/ultralytics/yolov3)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Docker Documentation](https://docs.docker.com/)
+
+---
+
+## Sample Output
+
+See the `/output` directory for example annotated images and JSON files from your own tests.
+
+---
+
+## Contributors
+
+- Built for technical assessment. Inspired by the open-source community.
+
+---
+
+**For any questions or replication issues, please refer to the step-by-step instructions above or raise an issue in this repository.**
+
 
 ## Project Structure
